@@ -75,7 +75,8 @@ namespace nhom1DemoXML
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            
+            EditInterface = false;
+            btnSua.Enabled = true;
             try
             {
                 if (dataSet.Tables.Count > 0) dataSet = new DataSet();
@@ -138,7 +139,9 @@ namespace nhom1DemoXML
 
         private void ThongSinhVien_Load(object sender, EventArgs e)
         {
-            EditInterface = false;
+            EditInterface = true;
+            btnSua.Enabled = false;
+            btnRead.Enabled = true;
         }
     }
 }
