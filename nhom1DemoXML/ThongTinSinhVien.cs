@@ -22,7 +22,7 @@ namespace nhom1DemoXML
             {
                 gridviewSV.ReadOnly = !value;
                 btnThem.Enabled = !value;
-                btnSua.Text = value ? "HỦY" : "SỬA";
+                btnSua.Text = value ? "LƯU" : "SỬA";
                 btnXoa.Enabled = !value;
                 btnTim.Enabled = !value;
                 btnWrite.Enabled = !value;
@@ -104,7 +104,10 @@ namespace nhom1DemoXML
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (gridviewSV.ReadOnly)
+            {
                 EditInterface = true;
+                MessageBox.Show("Hãy chỉnh sửa thông tin ở gridview");
+            }
             else
                 EditInterface = false;
         }
