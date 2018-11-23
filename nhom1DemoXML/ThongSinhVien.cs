@@ -40,7 +40,7 @@ namespace nhom1DemoXML
             try
             {
                 if (dataSet.Tables.Count > 0) return;
-                dataSet.ReadXml("../../test.xml", XmlReadMode.Auto);
+                dataSet.ReadXml("../../sinhvien.xml", XmlReadMode.Auto);
                 gridSach.DataSource = dataSet.Tables[0];
             }
             catch (Exception ex)
@@ -53,7 +53,7 @@ namespace nhom1DemoXML
         {
             try
             {
-                dataSet.WriteXml("../../test.xml", XmlWriteMode.IgnoreSchema);
+                dataSet.WriteXml("../../sinhvien.xml", XmlWriteMode.IgnoreSchema);
             }
             catch (Exception ex)
             {
