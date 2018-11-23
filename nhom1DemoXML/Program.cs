@@ -16,7 +16,7 @@ namespace nhom1DemoXML
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ThongSinhVien());
+            Application.Run(new ThongTinSinhVien());
         }
     }
 }
