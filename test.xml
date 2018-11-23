@@ -1,1 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?><NewDataSet />
+<xml version="1.0" standalone="yes">
+<documentelement>
+  <sinhvien>
+    <masinhvien>2</masinhvien>
+    <tensinhvien>Nguyen Van Khoi</tensinhvien>
+    <lop>D15PM02</lop>
+    <noisinh>Binh Duong</noisinh>
+  </sinhvien>
+  <sinhvien>
+    <masinhvien>3</masinhvien>
+    <tensinhvien>Nguyen Minh Thien</tensinhvien>
+    <lop>D15PM02</lop>
+    <noisinh>Binh Duong</noisinh>
+  </sinhvien>
+  <sinhvien>
+    <masinhvien>4</masinhvien>
+    <tensinhvien>NguyenVan A</tensinhvien>
+    <lop>D15PM02</lop>
+    <noisinh>Binh Duong</noisinh>
+  </sinhvien>
+</documentelement>
