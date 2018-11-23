@@ -24,10 +24,14 @@ namespace nhom1DemoXML
         {
 
         }
-
+        // nut thoat
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (DialogResult == DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
@@ -54,6 +58,58 @@ namespace nhom1DemoXML
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi xảy ra khi ghi file: " + ex.ToString());
+            }
+        }
+
+        private void gridSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            int t = gridSach.CurrentCell.RowIndex;
+            tbMa.Text = gridSach.Rows[t].Cells[0].Value.ToString();
+            tbTen.Text = gridSach.Rows[t].Cells[1].Value.ToString();
+            tbLop.Text = gridSach.Rows[t].Cells[2].Value.ToString();
+            tbNoisinh.Text = gridSach.Rows[t].Cells[3].Value.ToString();
+        }
+        private int chon = 0;
+        //nut sua
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+            chon = 2;
+            btnLuu.Enabled = true;
+            btnHuy.Enabled = true;
+
+        }
+        //Button thêm
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            chon = 1;
+            btnLuu.Enabled = true;
+            btnHuy.Enabled = true;
+        }
+        //nut xoa
+        private void btnXoa_Click(object sender, EventArgs e)
+        {       
+                DialogResult = MessageBox.Show("Bạn có chắc muốn xóa!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (DialogResult == DialogResult.OK)
+                {
+                    
+                }
+        }
+        //nut luu
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (chon == 1) // gọi Button Thêm
+            {
+                
+            }
+            else if (chon == 2)// gọi Button Sửa 
+            {
+                
+            }
+            else
+            {
+                chon = 0;
             }
         }
     }
