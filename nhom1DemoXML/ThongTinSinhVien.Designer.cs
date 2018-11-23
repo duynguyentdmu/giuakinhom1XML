@@ -129,12 +129,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 224);
+            this.label3.Location = new System.Drawing.Point(16, 213);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 25);
+            this.label3.Size = new System.Drawing.Size(145, 25);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Tìm Kiếm";
+            this.label3.Text = "Tìm Kiếm MSV";
             // 
             // tbMa
             // 
@@ -202,6 +202,7 @@
             this.btnTim.TabIndex = 8;
             this.btnTim.Text = "TÌM KIẾM";
             this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // btnWrite
             // 

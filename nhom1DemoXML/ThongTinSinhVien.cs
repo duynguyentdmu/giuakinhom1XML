@@ -146,5 +146,27 @@ namespace nhom1DemoXML
             btnSua.Enabled = false;
             btnRead.Enabled = true;
         }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string searchValue = tbTim.Text;
+
+            gridviewSV.SelectionMode = DataGridViewSelectionMode.RowHeaderSelect;
+            try
+            {
+                foreach (DataGridViewRow row in gridviewSV.Rows)
+                {
+                    if (row.Cells[0].Value.ToString().Equals(searchValue))
+                    {
+                        row.Selected = true;
+                        break;
+                    }
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+        }
     }
 }
